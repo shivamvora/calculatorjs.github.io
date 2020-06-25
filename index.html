@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        div{
+            width: 300px;
+            height: 450px;
+            background-color: white;
+            border-top: 40px groove red;
+            border-bottom: 40px groove red;
+            margin: 0 auto;
+            border-radius: 40px;
+            background-color: hotpink;
+            box-shadow: 0px 0px 10px #323232;
+        }
+        input[type=text]{
+            width: 95%;
+            height: 35px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            margin: 5px;
+            outline: none;
+            
+        }
+        input[type=button]{
+            width: 68px;
+            font-weight: bolder;
+            border: 2px solid white;
+            border-radius: 15px 0px 15px 0px;
+            height: 60px;
+            margin: 2px;
+            box-shadow: 0px 0px 5px white;
+            color: white;
+            outline: none;
+            cursor: pointer;
+            font-size: 150%;
+            background: linear-gradient(yellowgreen,orange);
+        }
+        #e{
+            width: 90%;
+            margin-left: 12px;
+            border-radius: 4px;
+            height: 45px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div>
+    
+        <form name="wap">
+            
+            <input name="result" type="text" autocomplete="off"><br><br>
+
+            <input type="button" value="1" onclick="document.wap.result.value+=1">
+            <input type="button" value="2" onclick="document.wap.result.value+=2">
+            <input type="button" value="3" onclick="document.wap.result.value+=3">
+            <input type="button" value="4" onclick="document.wap.result.value+=4">
+            <br><br>
+            <input type="button" value="5" onclick="document.wap.result.value+=5">
+            <input type="button" value="6" onclick="document.wap.result.value+=6">
+            <input type="button" value="7" onclick="document.wap.result.value+=7">
+            <input type="button" value="8" onclick="document.wap.result.value+=8">
+            <br><br>
+            <input type="button" value="9" onclick="document.wap.result.value+=9">
+            <input type="button" value="0" onclick="document.wap.result.value+=0">
+            <input type="button" value="." onclick="document.wap.result.value+='.'">
+            <input type="button" value="C" onclick="document.wap.result.value=''">
+            <br><br>
+            <input type="button" value="+" onclick="document.wap.result.value+='+'">
+            <input type="button" value="-" onclick="document.wap.result.value+='-'">
+            <input type="button" value="*" onclick="document.wap.result.value+='*'">
+            <input type="button" value="/" onclick="document.wap.result.value+='/'">
+            <br><br>
+            
+            <input type="button" value="=" id="e" onclick="document.wap.result.value = eval(document.wap.result.value) ">
+        </form>
+
+    </div>
+
+   
+</body>
+</html>
